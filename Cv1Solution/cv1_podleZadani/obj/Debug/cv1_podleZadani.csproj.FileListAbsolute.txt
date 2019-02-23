@@ -1,0 +1,7 @@
+C:\Users\David\Documents\Github\ICSHP\Cv1Solution\cv1_podleZadani\bin\Debug\cv1_podleZadani.exe.config
+C:\Users\David\Documents\Github\ICSHP\Cv1Solution\cv1_podleZadani\bin\Debug\cv1_podleZadani.exe
+C:\Users\David\Documents\Github\ICSHP\Cv1Solution\cv1_podleZadani\bin\Debug\cv1_podleZadani.pdb
+C:\Users\David\Documents\Github\ICSHP\Cv1Solution\cv1_podleZadani\obj\Debug\cv1_podleZadani.csprojAssemblyReference.cache
+C:\Users\David\Documents\Github\ICSHP\Cv1Solution\cv1_podleZadani\obj\Debug\cv1_podleZadani.csproj.CoreCompileInputs.cache
+C:\Users\David\Documents\Github\ICSHP\Cv1Solution\cv1_podleZadani\obj\Debug\cv1_podleZadani.exe
+C:\Users\David\Documents\Github\ICSHP\Cv1Solution\cv1_podleZadani\obj\Debug\cv1_podleZadani.pdb
