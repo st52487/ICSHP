@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cviceni02", "Cviceni02\Cvic
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utils", "Utils\Utils.csproj", "{7593F061-7169-4AAE-988F-DCFFB3B6A856}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseLib", "BaseLib\BaseLib.csproj", "{7FD5DC0F-EEBC-4523-A803-42518EBD69E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UlohyZadani", "UlohyZadani\UlohyZadani.csproj", "{F38646A8-0709-4E3C-8005-A22BAE637854}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{7593F061-7169-4AAE-988F-DCFFB3B6A856}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7593F061-7169-4AAE-988F-DCFFB3B6A856}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7593F061-7169-4AAE-988F-DCFFB3B6A856}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FD5DC0F-EEBC-4523-A803-42518EBD69E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FD5DC0F-EEBC-4523-A803-42518EBD69E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FD5DC0F-EEBC-4523-A803-42518EBD69E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FD5DC0F-EEBC-4523-A803-42518EBD69E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F38646A8-0709-4E3C-8005-A22BAE637854}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F38646A8-0709-4E3C-8005-A22BAE637854}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F38646A8-0709-4E3C-8005-A22BAE637854}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F38646A8-0709-4E3C-8005-A22BAE637854}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
