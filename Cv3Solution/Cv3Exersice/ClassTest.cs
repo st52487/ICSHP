@@ -24,6 +24,8 @@ namespace Cv3Exersice
 
         private static int GetMaxInt() { return int.MaxValue; }
 
+        public int Value4 => GetMaxInt() * 3;
+
         public bool Signed { get; private set; }
 
         public MyInteger()
