@@ -12,9 +12,17 @@ namespace Exercise5
 {
     public partial class NejKluby : Form
     {
-        public NejKluby()
+        private FotbalovyKlub[] klub;
+        private int countOfGoals;
+        internal NejKluby(Hraci hraci)
         {
             InitializeComponent();
+            hraci.NajdiNejlepsiKluby(out this.klub, out this.countOfGoals);
+            textBoxGoals.Text = countOfGoals.ToString();
+            for (int i = 0; i < klub.Length; i++)
+            {
+                richTextBoxClubs.AppendText(klub[i].ToString());
+            }
         }
     }
 }

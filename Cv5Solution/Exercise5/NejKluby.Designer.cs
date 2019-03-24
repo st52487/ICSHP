@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxGoals = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.richTextBoxClubs = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -43,14 +43,14 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Počet gólů";
             // 
-            // textBox1
+            // textBoxGoals
             // 
-            this.textBox1.AccessibleName = "textBoxGoals";
-            this.textBox1.Location = new System.Drawing.Point(16, 34);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(100, 22);
-            this.textBox1.TabIndex = 1;
+            this.textBoxGoals.AccessibleName = "";
+            this.textBoxGoals.Location = new System.Drawing.Point(16, 34);
+            this.textBoxGoals.Name = "textBoxGoals";
+            this.textBoxGoals.ReadOnly = true;
+            this.textBoxGoals.Size = new System.Drawing.Size(100, 22);
+            this.textBoxGoals.TabIndex = 1;
             // 
             // label2
             // 
@@ -61,23 +61,24 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Kluby";
             // 
-            // richTextBox1
+            // richTextBoxClubs
             // 
-            this.richTextBox1.AccessibleName = "richTextBestClubs";
-            this.richTextBox1.Location = new System.Drawing.Point(19, 99);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(396, 177);
-            this.richTextBox1.TabIndex = 3;
-            this.richTextBox1.Text = "";
+            this.richTextBoxClubs.AccessibleName = "richTextBestClubs";
+            this.richTextBoxClubs.Location = new System.Drawing.Point(19, 99);
+            this.richTextBoxClubs.Multiline = false;
+            this.richTextBoxClubs.Name = "richTextBoxClubs";
+            this.richTextBoxClubs.Size = new System.Drawing.Size(396, 177);
+            this.richTextBoxClubs.TabIndex = 3;
+            this.richTextBoxClubs.Text = "";
             // 
             // NejKluby
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(440, 324);
-            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.richTextBoxClubs);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBoxGoals);
             this.Controls.Add(this.label1);
             this.Name = "NejKluby";
             this.Text = "NejKluby";
@@ -89,8 +90,8 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBoxGoals;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox richTextBoxClubs;
     }
 }

@@ -29,15 +29,25 @@ namespace Exercise5
             ListAktualization();
         }
 
-        private void editClubEvent(object sender, EventArgs e)
+        private void EditClubEvent(object sender, EventArgs e)
         {
+            int index = listView1.FocusedItem.Index;
+            bool edit = true;
+            NewPlayer editPlayer = new NewPlayer(hraci, edit, index)
+            {
+                Text = "Hráči"
+            };
+            editPlayer.ShowDialog();
 
+            ListAktualization();
         }
 
         private void ShowClubsEvent(object sender, EventArgs e)
         {
-            NejKluby bestClubs = new NejKluby();
-            bestClubs.Text = "Nejlepší kluby";
+            NejKluby bestClubs = new NejKluby(hraci)
+            {
+                Text = "Nejlepší kluby"
+            };
             bestClubs.Show();
         }
 
@@ -58,8 +68,10 @@ namespace Exercise5
 
         private void AddPlayerEvent(object sender, EventArgs e)
         {
-            NewPlayer newPlayerDialog = new NewPlayer();
-            newPlayerDialog.Text = "Hráč";
+            NewPlayer newPlayerDialog = new NewPlayer
+            {
+                Text = "Hráči"
+            };
             newPlayerDialog.ShowDialog();
             
             hraci.Pridej(newPlayerDialog.GetHrac());

@@ -75,7 +75,7 @@
             this.button3.TabIndex = 4;
             this.button3.Text = "Upravit...";
             this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.editClubEvent);
+            this.button3.Click += new System.EventHandler(this.EditClubEvent);
             // 
             // button4
             // 

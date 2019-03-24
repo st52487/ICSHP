@@ -53,12 +53,37 @@ namespace Exercise5
         public Hrac this[int index]
         {
             get => field[index];
+            set => field[index] = value;
         }
 
         public void NajdiNejlepsiKluby(out FotbalovyKlub[] kluby, out int countOfGoals)
         {
-            kluby = null;
             countOfGoals = 0;
+            int pocet = 0;
+            
+            for (int i = 0; i < Pocet; i++)
+            {
+                if(field[i].GolPocet >= countOfGoals)
+                {
+                    pocet++;
+                    countOfGoals = field[i].GolPocet;
+                }
+            }
+            kluby = new FotbalovyKlub[pocet];
+            int index = 0;
+            for (int i = 0; i < Pocet; i++)
+            {
+                if(field[i].GolPocet == countOfGoals)
+                {
+                    for (int j = 0; j < kluby.Length; j++)
+                    {
+                        if(kluby[i] != field[i].Klub)
+                        {
+                            kluby[index++] = field[i].Klub;
+                        }
+                    }
+                }
+            }
         }
 
     }
