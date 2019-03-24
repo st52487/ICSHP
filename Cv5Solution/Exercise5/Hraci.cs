@@ -14,11 +14,13 @@ namespace Exercise5
         public int Pocet { get; set; }
 
         public event Pocetzmen Udalost;
+        private bool registration = false;
        
 
         private int Zmena(int pocet)
         {
-            return 0;
+            Console.WriteLine("Pocet hracu: " + pocet);
+            return pocet;
         }
 
         public Hraci()
@@ -42,12 +44,20 @@ namespace Exercise5
             {
                 field[i] = pom[i];
             }
+            if (registration)
+                Udalost(Pocet);
         }
 
         public void Pridej(Hrac hrac)
         {
             field[Pocet++] = hrac;
-            //Udalost(Pocet);
+            if (registration)
+                Udalost(Pocet);
+        }
+
+        public void SetRegistration(bool registration)
+        {
+            this.registration = registration;
         }
 
         public Hrac this[int index]

@@ -51,14 +51,16 @@ namespace Exercise5
             bestClubs.Show();
         }
 
-        private void registerClubEvent(object sender, EventArgs e)
+        private void RegisterClubEvent(object sender, EventArgs e)
         {
-
+            richTextBox1.AppendText("Registrovan handler udalosti");
+            hraci.SetRegistration(true);
         }
 
-        private void cancelEvent(object sender, EventArgs e)
+        private void CancelEvent(object sender, EventArgs e)
         {
-
+            richTextBox1.AppendText("Zrušena registrace eventu udalosti");
+            hraci.SetRegistration(false);
         }
 
         private void EndAppEvent(object sender, EventArgs e)
@@ -75,7 +77,6 @@ namespace Exercise5
             newPlayerDialog.ShowDialog();
             
             hraci.Pridej(newPlayerDialog.GetHrac());
-
             ListAktualization();
         }
 
