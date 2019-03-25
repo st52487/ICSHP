@@ -78,6 +78,7 @@ namespace Exercise5
             
             hraci.Pridej(newPlayerDialog.GetHrac());
             ListAktualization();
+            
         }
 
         private void ListAktualization()
