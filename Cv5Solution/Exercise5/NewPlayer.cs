@@ -37,7 +37,15 @@ namespace Exercise5
         {
             if (!edit)
             {
-                this.hrac = new Hrac(textBoxName.Text, (FotbalovyKlub)comboBoxClub.SelectedIndex, Convert.ToInt32(textBoxGoals.Text));
+                try
+                {
+                    this.hrac = new Hrac(textBoxName.Text, (FotbalovyKlub)comboBoxClub.SelectedIndex, Convert.ToInt32(textBoxGoals.Text));
+                }
+                catch(Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                
             }
             else
             {

@@ -89,7 +89,7 @@ namespace Exercise5
             //this.listView1.Columns.Add(columnHeader2);
             //this.listView1.Columns.Add(columnHeader3);
             //  this.listView1.View = View.Details;
-
+            
             for (int i = 0; i < hraci.Pocet; i++)
             {
                 listView1.Items.Add(hraci[i].ToString());
