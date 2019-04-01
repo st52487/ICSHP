@@ -6,14 +6,15 @@ using System.Threading.Tasks;
 
 namespace Exercise5
 {
-    public delegate int Pocetzmen(int pocetHracu);
-   
+    //public delegate int Pocetzmen(object sender, EventArgs e);
+    
+
     class Hraci
     {
+        public event PocetZmenenEventHandler PocetZmenen;
         private Hrac[] field;
         public int Pocet { get; set; }
 
-        public event Pocetzmen Udalost;
         private bool registration = false;
        
 
@@ -26,7 +27,6 @@ namespace Exercise5
         public Hraci()
         {
             field = new Hrac[100];
-            Udalost += Zmena;
         }
 
         public void Vymaz(int index)
@@ -44,15 +44,13 @@ namespace Exercise5
             {
                 field[i] = pom[i];
             }
-            if (registration)
-                Udalost(Pocet);
+            OnPocetZmenen(Pocet - 1);
         }
 
         public void Pridej(Hrac hrac)
         {
             field[Pocet++] = hrac;
-            if (registration)
-                Udalost(Pocet);
+            OnPocetZmenen(Pocet + 1);
         }
 
         public void SetRegistration(bool registration)
@@ -94,6 +92,14 @@ namespace Exercise5
                     }
                 }
             }
+        }
+
+        private void OnPocetZmenen(int puvodniPocetHracu)
+        {
+            PocetZmenen?.Invoke(this, new PocetZmenenEventArgs()
+            {
+                PuvodniPocet = puvodniPocetHracu
+            });
         }
 
     }
