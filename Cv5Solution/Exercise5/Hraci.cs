@@ -31,19 +31,12 @@ namespace Exercise5
 
         public void Vymaz(int index)
         {
-            Hrac[] pom = new Hrac[100];
-            int indexPom = 0;
-            for (int i = 0; i < Pocet; i++)
+            for (int i = index; i < Pocet - 1; i++)
             {
-                if(i != index)
-                {
-                    pom[indexPom++] = field[i];
-                }
+                field[i] = field[i + 1];
             }
-            for (int i = 0; i < --Pocet; i++)
-            {
-                field[i] = pom[i];
-            }
+
+            Pocet--;
             OnPocetZmenen(Pocet - 1);
         }
 
