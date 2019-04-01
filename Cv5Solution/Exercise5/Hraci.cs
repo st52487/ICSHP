@@ -12,8 +12,8 @@ namespace Exercise5
     class Hraci
     {
         public event PocetZmenenEventHandler PocetZmenen;
-        private Hrac[] field;
-        public int Pocet { get; set; }
+        private readonly Hrac[] field;
+        public int Pocet { get; private set; }
 
         private bool registration = false;
        
