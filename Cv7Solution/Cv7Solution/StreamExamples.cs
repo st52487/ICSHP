@@ -20,9 +20,24 @@ namespace Cv7Solution
             const string testPath02 = "testWithBuffer.txt";
             if (!File.Exists(testPath02))
             {
-                FileStream test2 = File.Create(testPath02, sizeof(int) * 100, FileOptions.Encrypted);
-                test2.Flush();
+                //FileStream test2 = File.Create(testPath02, sizeof(int) * 100, FileOptions.Encrypted);
+                //test2.Flush();
+                using (StreamWriter sw = File.CreateText(testPath02))
+                {
+                    sw.Write("test text");
+                }
             }
+            FileInfo fileInfoTest1 = new FileInfo(testPath01);
+            if (fileInfoTest1.Exists)
+            {
+                var sw = fileInfoTest1.Create();
+                sw.Close();
+            }
+
+            DriveInfo di = new DriveInfo("C");
+            var freeSpace = di.TotalFreeSpace;
+            
+            
         }
     }
 }
